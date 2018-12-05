@@ -17,6 +17,7 @@ async def scrappy(session):
         data = json.loads(soup.find_all('script', {'data-react-helmet': 'true'})[1].text)[0]
         return {
             'name': data['name'],
+            'url': data['url'],
             'start_date': data['startDate'],
             'end_date': data['endDate'],
             'description': data['description'],
