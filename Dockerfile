@@ -21,5 +21,5 @@ FROM python:3.6-alpine
 COPY --from=builder /install /usr/local
 COPY main.py /main.py
 
-EXPOSE 8006
+EXPOSE 8000
 CMD ["python", "/main.py"]
