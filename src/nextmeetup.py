@@ -1,4 +1,6 @@
-import requests, re, json
+import requests
+import re
+import json
 from bs4 import BeautifulSoup
 
 req = requests.get("https://www.meetup.com/gdgmanagua/")
